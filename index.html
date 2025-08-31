@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt-library : Heer Mehta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Prompt-library : Heer Mehta</h1>
+        </div>
+    </header>
+    <main class="container">
+    <section id="controls">
+      <input id="search" type="search" placeholder="Search prompts (e.g., resume, study, social)" />
+      <button id="addBtn">+ Add Prompt</button>
+    </section>
+        <section id="prompts" class="cards">
+      <!-- Prompt cards injected by JS -->
+    </section>
+  </main>
+
+  <dialog id="addModal" class="modal">
+    <form method="dialog" id="addForm">
+      <h3>Add a new prompt</h3>
+      <label>Title<input id="pTitle" required /></label>
+      <label>Category<input id="pCategory" /></label>
+      <label>Prompt<textarea id="pText" rows="6" required></textarea></label>
+      <menu>
+        <button id="cancel" type="button">Cancel</button>
+        <button id="save" type="submit">Save</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <footer class="container footer">
+    <p>Made by Heer • Use these prompts responsibly</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
