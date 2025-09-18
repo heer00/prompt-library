@@ -1,44 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prompt-library : Heer Mehta</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Library</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <h1>Prompt-library : Heer Mehta</h1>
-        </div>
-    </header>
-    <main class="container">
-    <section id="controls">
-      <input id="search" type="search" placeholder="Search prompts (e.g., resume, study, social)" />
-      <button id="addBtn">+ Add Prompt</button>
-    </section>
-        <section id="prompts" class="cards">
-      <!-- Prompt cards injected by JS -->
+  <header>
+    <h1>🚀 Prompt Library</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="prompts.html">Browse Prompts</a>
+      <a href="add.html">Add Prompt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to Prompt Library</h2>
+      <p>Find, explore, and share AI prompts for productivity, creativity, and learning.</p>
     </section>
   </main>
 
-  <dialog id="addModal" class="modal">
-    <form method="dialog" id="addForm">
-      <h3>Add a new prompt</h3>
-      <label>Title<input id="pTitle" required /></label>
-      <label>Category<input id="pCategory" /></label>
-      <label>Prompt<textarea id="pText" rows="6" required></textarea></label>
-      <menu>
-        <button id="cancel" type="button">Cancel</button>
-        <button id="save" type="submit">Save</button>
-      </menu>
-    </form>
-  </dialog>
-
-  <footer class="container footer">
-    <p>Made by Heer • Use these prompts responsibly</p>
+  <footer>
+    <p>Made with ❤️ by Heer</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
